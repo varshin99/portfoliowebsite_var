@@ -315,3 +315,34 @@ body {
     background-color: #0077cc;
     color: white;
 }
+.main-content .about-skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.about-me, .skills {
+    width: 48%; /* Adjust width as needed to give some space between the two columns */
+}
+
+/* Remove the border-bottom from h2 if you don't want the blue line */
+.main-content h2 {
+    border-bottom: none;
+}
+
+/* Alternatively, if you want to keep the border for other h2 elements but not here, be more specific */
+.about-me > h2, .skills > h2 {
+    border-bottom: none;
+}
+
+/* If there's a global style for h2 that you want to override */
+.main-content h2 {
+    border-bottom: none !important; /* Use !important sparingly, only if necessary */
+}
+
+/* Progress bar styles */
+progress {
+    width: 100%; /* Makes the progress bar take full width of its container */
+    height: 1rem; /* Gives the progress bar a height */
+}
