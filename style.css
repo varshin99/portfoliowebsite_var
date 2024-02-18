@@ -262,31 +262,32 @@ body {
 .tabs li.active {
     background-color: #ddd;
 }
-.project {
+.publication-tabs {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
-.project li {
+.publication-tabs li {
+    display: inline;
     cursor: pointer;
-    padding: 30px;
-    display: inline-block;
-    background-color: #eee;
-    margin-right: 5px;
+    padding: 10px;
+    margin-right: 4px;
+    background-color: #f0f0f0;
 }
 
-.project-content {
+.publication-content {
     display: none;
-    background-color: #f9f9f9;
-    padding: 15px;
+    background-color: #fff;
+    padding: 20px;
     margin-top: 10px;
 }
 
-.project-content.active {
+.publication-content.active {
     display: block;
 }
 
-.project li.active {
-    background-color: #ddd;
+.publication-tabs li.active {
+    background-color: #0077cc;
+    color: white;
 }
+
