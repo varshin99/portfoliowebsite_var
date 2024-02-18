@@ -198,6 +198,35 @@ body {
     display: flex;
     justify-content: flex-end; /* Aligns the image to the right */
 }
+#education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8; /* Light background for the education section */
+    padding: 50px; /* Spacing around content */
+}
+
+.education-content {
+    width: 100%; /* Ensure the container spans the full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-text {
+    flex-basis: 60%; /* Adjust the width of the text container */
+}
+
+.education-image {
+    flex-basis: 40%; /* Adjust the width of the image container */
+    text-align: right; /* Align the image to the right */
+}
+
+.education-image img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .hero-image img {
     max-width: 60%; /* Increased maximum width of the image */
