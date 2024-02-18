@@ -112,7 +112,7 @@ section {
 }
 
 /* Increase the size of specific sections, e.g., Education and Projects */
-#education, #projects {
+#education, #projects, #publications, #about, #experience, #contact{
     padding: 100px 0; /* Larger padding for these sections */
 }
 
