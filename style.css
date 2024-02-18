@@ -168,7 +168,7 @@ body {
 
 /* Flex container styling */
 .hero {
-    background: #fff;
+    background: #EEEEEE;
     padding: 120px;
     margin-bottom: 120px;
     display: flex; /* Use flexbox for layout */
