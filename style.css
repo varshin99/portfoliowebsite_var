@@ -229,7 +229,7 @@ body {
     cursor: pointer;
     padding: 10px;
     margin-right: 4px; /* Adjust spacing between tabs */
-    background-color: #f0f0f0; /* Tab background color */
+    background-color: #FDF0D1; /* Tab background color */
 }
 
 .experience-content {
@@ -257,7 +257,7 @@ body {
     cursor: pointer;
     padding: 10px;
     margin-right: 4px; /* Adjust spacing between tabs */
-    background-color: #EEEEEE; /* Tab background color */
+    background-color: #FDF0D1; /* Tab background color */
 }
 
 .project-content {
@@ -285,7 +285,7 @@ body {
     cursor: pointer;
     padding: 10px;
     margin-right: 4px;
-    background-color: #f0f0f0;
+    background-color: #FDF0D1;
 }
 
 .publication-content {
