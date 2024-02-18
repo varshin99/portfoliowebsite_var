@@ -240,7 +240,7 @@ body {
 
 .tabs li {
     cursor: pointer;
-    padding: 10px;
+    padding: 30px;
     display: inline-block;
     background-color: #eee;
     margin-right: 5px;
