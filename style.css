@@ -103,7 +103,7 @@ footer {
 }
 
 #education, #projects, #publications, #about, #experience, #contact{
-    background-color: #eeeeee; /* Light gray background for these sections to create an alternating pattern */
+    background-color: #222831; /* Light gray background for these sections to create an alternating pattern */
 }
 
 /* Increase the size of specific sections, e.g., Education and Projects */
