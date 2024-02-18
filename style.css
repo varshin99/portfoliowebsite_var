@@ -96,8 +96,11 @@ footer {
     padding: 10px 0;
 }
 
- #contact{
+ #contact,#education,#projects {
     background-color: #EEEEEE; /* Light gray background for these sections to create an alternating pattern */
+}
+ #about,#experience,#publications {
+    background-color: #98D8AA; /* Light gray background for these sections to create an alternating pattern */
 }
 
 /* Increase the size of specific sections, e.g., Education and Projects */
