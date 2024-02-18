@@ -95,12 +95,7 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-/* Add space around each section and alternate background colors */
-section {
-    padding: 50px 0; /* Adds top and bottom padding to each section */
-    margin: 0 20px; /* Adds margin to the left and right of each section */
-    background-color: #f4f4f4; /* Default light gray background color for all sections */
-}
+
 
 /* Differentiate background colors between sections */
 #about, #experience, #contact {
