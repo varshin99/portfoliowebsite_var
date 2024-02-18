@@ -214,11 +214,11 @@ body {
 }
 
 .education-text {
-    flex-basis: 60%; /* Adjust the width of the text container */
+    flex-basis: 70%; /* Adjust the width of the text container */
 }
 
 .education-image {
-    flex-basis: 40%; /* Adjust the width of the image container */
+    flex-basis: 60%; /* Adjust the width of the image container */
     text-align: right; /* Align the image to the right */
 }
 
