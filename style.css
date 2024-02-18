@@ -159,3 +159,47 @@ section h2 {
     max-width: 50%; /* Adjust the size of the image */
     height: auto;
 }
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Flex container styling */
+.hero {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out the child elements */
+}
+
+/* Text styling with increased size */
+.hero-text h1 {
+    color: #0077cc;
+    font-size: 3em; /* Increased font size for the name */
+}
+
+.hero-text h2 {
+    color: #333;
+    font-size: 2.5em; /* Increased font size for the 'Hi there, I'm' text */
+}
+
+.hero-text p {
+    color: #666;
+    font-size: 1.5em; /* Increased font size for the subtitle */
+}
+
+/* Image styling with increased size */
+.hero-image {
+    flex: 1; /* Allows image to grow and shrink as needed */
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the right */
+}
+
+.hero-image img {
+    max-width: 60%; /* Increased maximum width of the image */
+    height: auto;
+}
