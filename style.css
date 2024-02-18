@@ -262,31 +262,31 @@ body {
 .tabs li.active {
     background-color: #ddd;
 }
-.project-tabs {
+.project {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-.project-tabs li {
-    display: inline;
+.project li {
     cursor: pointer;
-    padding: 10px;
-    margin-right: 4px; /* Adjust spacing between tabs */
-    background-color: #f0f0f0; /* Tab background color */
+    padding: 30px;
+    display: inline-block;
+    background-color: #eee;
+    margin-right: 5px;
 }
 
 .project-content {
     display: none;
-    background-color: #fff; /* Content background color */
-    padding: 20px;
-    margin-top: 10px; /* Space between tabs and content */
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
 }
 
 .project-content.active {
     display: block;
 }
 
-.project-tabs li.active {
-    background-color: #0077cc;
-    color: white;
+.project li.active {
+    background-color: #ddd;
 }
