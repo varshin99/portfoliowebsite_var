@@ -1,15 +1,18 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background for the whole page */
+    color: #333333; /* Darker text for better readability */
 }
 
 header {
-    background-color: #f2f2f2;
+    background-color: #333333; /* Dark header background */
+    color: #ffffff; /* White text color for contrast */
     padding: 10px;
     text-align: center;
 }
 
 nav {
-    background-color: #f2f2f2;
+    background-color: #007bff; /* Bright blue for navigation bar */
     padding: 10px 0;
     text-align: center;
 }
@@ -26,21 +29,25 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff; /* White text color for navigation links */
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #007bff;
+nav ul li a:hover, nav ul li a.active {
+    color: #ffd700; /* Gold color for hover and active states */
 }
 
 section {
+    background-color: #ffffff; /* White background for sections for clean look */
     margin: 20px;
     padding: 10px;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 footer {
-    background-color: #f2f2f2;
+    background-color: #333333; /* Matching the header background */
+    color: #ffffff; /* White text color for footer */
     padding: 10px;
     text-align: center;
 }
