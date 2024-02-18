@@ -28,3 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const projectTabs = document.querySelectorAll(".project-tab");
+    const projectContents = document.querySelectorAll(".project-content");
+
+    projectTabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            const target = document.querySelector(tab.dataset.tabTarget);
+            projectContents.forEach(content => {
+                content.classList.remove("active");
+            });
+            projectTabs.forEach(t => {
+                t.classList.remove("active");
+            });
+            tab.classList.add("active");
+            target.classList.add("active");
+        });
+    });
+});
