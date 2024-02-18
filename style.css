@@ -338,20 +338,27 @@ progress {
     }
 }
 #contact .contact-container {
-    text-align: center; /* Center-align the text */
+    text-align: center; /* Center-align the container */
     padding: 20px;
+    margin: 0 auto; /* Auto margins center the block itself */
+    max-width: 600px; /* Maximum width of the container */
 }
 
 #contact .contact-details {
-    margin-bottom: 20px; /* Add some space below the contact details */
+    margin-bottom: 20px; /* Space between contact details and social links */
 }
 
-#contact .contact-links a {
-    margin: 0 10px; /* Add horizontal space between the links */
-    display: inline-block; /* Align images in line */
+#contact .social-links {
+    display: flex;
+    justify-content: center; /* Center-align the flex items */
+    gap: 10px; /* Space between the flex items */
 }
 
-#contact .contact-links img {
-    width: 24px; /* Adjust width as needed */
+#contact .social-links a {
+    display: inline-block; /* Align items inline */
+}
+
+#contact .social-icon {
+    width: 24px; /* Smaller size for the icons */
     height: auto; /* Maintain aspect ratio */
 }
