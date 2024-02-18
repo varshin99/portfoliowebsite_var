@@ -1,7 +1,43 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* Light grey background for the whole page */
+    color: #333333; /* Darker text for better readability */
+    margin: 0;
+    padding-top: 100px; /* Adjusted for fixed header */
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4; /* Adjust the background color as needed */
+    margin-top: -100px; /* Offset for the fixed header */
+}
+
+/* Rest of your CSS for header, nav, etc... */
+
+/* Adjusted main content style */
+.main-content {
+    padding-top: 550px; /* Increase this if your hero section is taller */
+}
+
+/* Additional styles to prevent overlap */
+body > section:first-of-type {
+    padding-top: 100px; /* This should be the height of your fixed header */
+    margin-top: -100px; /* Negative margin to adjust for the header */
+}
+
+/* Rest of your existing CSS... */
+
+/* Footer styles... */
+
 /* Adjusted main content style */
 .main-content {
     padding-top: 550px; /* Adjust this value to the combined height of your header and nav */
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4; /* Light grey background for the whole page */
