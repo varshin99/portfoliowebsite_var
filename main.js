@@ -1,12 +1,9 @@
-// Smooth Scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+// Highlight active menu item on click
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', function() {
+        document.querySelectorAll('nav ul li a').forEach(item => {
+            item.classList.remove('active');
         });
+        this.classList.add('active');
     });
 });
-
-// Additional interactivity can be added here
