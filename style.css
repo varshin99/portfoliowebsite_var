@@ -315,34 +315,37 @@ body {
     background-color: #0077cc;
     color: white;
 }
-.main-content .about-skills-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
+/* Assuming .main-content wraps both .about-me and .skills */
+.main-content {
+    display: flex; /* This will align .about-me and .skills side by side */
+    justify-content: space-between; /* This adds space between the two sections */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    padding: 20px; /* Add padding as needed */
+    border-bottom: none; /* Removes the bottom border if it exists */
 }
 
 .about-me, .skills {
-    width: 48%; /* Adjust width as needed to give some space between the two columns */
+    width: 48%; /* Adjust the width of each section to be less than half to fit side by side */
+    /* Alternatively, you could use flex: 1; for both if you want them to share the space equally */
 }
 
-/* Remove the border-bottom from h2 if you don't want the blue line */
-.main-content h2 {
-    border-bottom: none;
+/* Remove any border or line if it is applied directly to a heading or another element */
+.about-me h2, .skills h2 {
+    border-bottom: none; /* Removes the border from the headings */
 }
 
-/* Alternatively, if you want to keep the border for other h2 elements but not here, be more specific */
-.about-me > h2, .skills > h2 {
-    border-bottom: none;
-}
-
-/* If there's a global style for h2 that you want to override */
-.main-content h2 {
-    border-bottom: none !important; /* Use !important sparingly, only if necessary */
-}
-
-/* Progress bar styles */
+/* Style the progress bars if needed */
 progress {
-    width: 100%; /* Makes the progress bar take full width of its container */
-    height: 1rem; /* Gives the progress bar a height */
+    width: 100%; /* Set to the full width of the container */
+    margin-top: 10px; /* Add some space above the progress bar */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack them on top of each other on smaller screens */
+    }
+    .about-me, .skills {
+        width: 100%; /* Each section takes the full width on smaller screens */
+    }
 }
