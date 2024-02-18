@@ -1,46 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4; /* Light grey background for the whole page */
     color: #333333; /* Darker text for better readability */
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #333333; /* Dark header background */
-    color: #ffffff; /* White text color for contrast */
-    padding: 10px;
-    text-align: center;
+    background-color: #fff; /* White header background */
+    color: #333333; /* Dark text color for contrast */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 10px 0;
+    position: fixed; /* Fixed at the top */
+    width: 100%; /* Full width */
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 300;
 }
 
 nav {
     background-color: #007bff; /* Bright blue for navigation bar */
-    padding: 10px 0;
     text-align: center;
+    position: fixed; /* Fixed at the top */
+    width: 100%; /* Full width */
+    top: 50px; /* Below the header */
+    z-index: 1000;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff; /* White text color for navigation links */
-    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
 }
 
 nav ul li a:hover, nav ul li a.active {
-    color: #ffd700; /* Gold color for hover and active states */
+    background-color: #0056b3; /* Darker blue for hover and active states */
+    border-radius: 5px; /* Rounded corners for buttons */
 }
 
+/* Main content style */
+.main-content {
+    padding-top: 110px; /* Add padding to account for fixed header and nav */
+}
+
+/* Styles for sections */
 section {
-    background-color: #ffffff; /* White background for sections for clean look */
-    margin: 20px;
-    padding: 10px;
+    background-color: #ffffff; /* White background for sections for a clean look */
+    margin: 20px 5%; /* Add margin around sections */
+    padding: 20px;
     border-radius: 8px; /* Rounded corners for sections */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
@@ -48,6 +70,44 @@ section {
 footer {
     background-color: #333333; /* Matching the header background */
     color: #ffffff; /* White text color for footer */
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Social media icons style */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons li a {
+    color: #007bff; /* Icon color */
+    font-size: 1.6em; /* Icon size */
+}
+
+.social-icons li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button style */
+.btn {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
