@@ -1,3 +1,33 @@
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    background: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #0077cc;
+}
+
+/* Section styling */
+.main-content h2 {
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+}
+
 /* General styling */
 body {
     font-family: 'Arial', sans-serif;
@@ -31,29 +61,6 @@ body {
     height: auto;
 }
 
-/* Navigation styling */
-nav ul {
-    list-style: none;
-    background: #333;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 20px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background-color: #0077cc;
-}
 
 /* Section styling */
 .main-content h2 {
