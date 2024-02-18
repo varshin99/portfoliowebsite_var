@@ -55,47 +55,15 @@ nav ul li a:hover {
     background-color: #0077cc;
 }
 
-/* General Section Styling */
-.section-container {
-    background-color: #f9f9f9;
-    padding: 20px;
-    text-align: left;
+/* Section styling */
+.main-content h2 {
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
 }
 
-.section-item {
-    background: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-left: 5px solid #0077cc;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.section-item h3 {
-    color: #333;
-    margin: 0 0 10px 0;
-    font-size: 1.5em;
-}
-
-.section-item p {
-    color: #666;
-    margin: 0;
-    font-size: 1em;
-}
-
-/* Specific adjustments for the Education section */
-#education .section-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* Apply flexbox to align items horizontally for larger screens */
-@media screen and (min-width: 768px) {
-    .section-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+.main-content p, .experience-item ul, .experience-item p, .experience-item h3 {
+    padding: 5px;
+    margin-left: 20px;
 }
 
 /* Buttons */
