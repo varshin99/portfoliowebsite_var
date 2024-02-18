@@ -102,14 +102,14 @@ footer {
     background-color: #ffffff; /* White background for these sections */
 }
 
-#education, #projects, #about{
-    background-color: #EFEAD8; /* Light gray background for these sections to create an alternating pattern */
+ #projects, #about{
+    background-color: #CCD3CA; /* Light gray background for these sections to create an alternating pattern */
 }
 #publications{
     background-color: #F7B787; /* Light gray background for these sections to create an alternating pattern */
 }
  #contact{
-    background-color: #CCD3CA; /* Light gray background for these sections to create an alternating pattern */
+    background-color: #EFEAD8; /* Light gray background for these sections to create an alternating pattern */
 }
 #experience{
     background-color: #EEEEEE; /* Light gray background for these sections to create an alternating pattern */
