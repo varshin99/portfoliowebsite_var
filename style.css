@@ -136,7 +136,7 @@ section h2 {
 
 /* Add this to the bottom of your existing CSS */
 .hero {
-    background: #fff;
+    background: #F4EEEE;
     padding: 20px;
     margin-bottom: 20px;
     display: flex; /* Use flexbox for layout */
