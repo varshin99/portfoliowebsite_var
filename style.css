@@ -232,3 +232,31 @@ body {
     max-width: 60%; /* Increased maximum width of the image */
     height: auto;
 }
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs li {
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    background-color: #eee;
+    margin-right: 5px;
+}
+
+.tab-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tabs li.active {
+    background-color: #ddd;
+}
