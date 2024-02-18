@@ -46,3 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const publicationTabs = document.querySelectorAll(".publication-tab");
+    const publicationContents = document.querySelectorAll(".publication-content");
+
+    publicationTabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            const target = document.querySelector(tab.dataset.tabTarget);
+            publicationContents.forEach(content => {
+                content.classList.remove("active");
+            });
+            publicationTabs.forEach(t => {
+                t.classList.remove("active");
+            });
+            tab.classList.add("active");
+            target.classList.add("active");
+        });
+    });
+});
