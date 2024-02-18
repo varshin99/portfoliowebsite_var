@@ -8,8 +8,8 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     });
 });
 document.addEventListener("DOMContentLoaded", () => {
-    const tabs = document.querySelectorAll(".tab");
-    const tabContents = document.querySelectorAll(".tab-content");
+    const tabs = document.querySelectorAll(".experience-tab");
+    const tabContents = document.querySelectorAll(".experience-content");
 
     tabs.forEach(tab => {
         tab.addEventListener("click", () => {
