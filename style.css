@@ -96,22 +96,7 @@ footer {
     padding: 10px 0;
 }
 
-
-/* Differentiate background colors between sections */
-#about, #experience, #contact {
-    background-color: #ffffff; /* White background for these sections */
-}
-
- #projects, #about{
-    background-color: #CCD3CA; /* Light gray background for these sections to create an alternating pattern */
-}
-#publications{
-    background-color: #F7B787; /* Light gray background for these sections to create an alternating pattern */
-}
  #contact{
-    background-color: #EFEAD8; /* Light gray background for these sections to create an alternating pattern */
-}
-#experience{
     background-color: #EEEEEE; /* Light gray background for these sections to create an alternating pattern */
 }
 
@@ -201,7 +186,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f8f8; /* Light background for the education section */
+    background-color: #EEEEEE; /* Light background for the education section */
     padding: 50px; /* Spacing around content */
 }
 
@@ -269,7 +254,7 @@ body {
     cursor: pointer;
     padding: 10px;
     margin-right: 4px; /* Adjust spacing between tabs */
-    background-color: #f0f0f0; /* Tab background color */
+    background-color: #EEEEEE; /* Tab background color */
 }
 
 .project-content {
