@@ -231,36 +231,33 @@ body {
     max-width: 60%; /* Increased maximum width of the image */
     height: auto;
 }
-.experience-text {
-    flex-basis: 70%; /* Adjust the width of the text container */
-}
-.tabs {
+.experience-tabs {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
-.tabs li {
+.experience-tabs li {
+    display: inline;
     cursor: pointer;
-    padding: 30px;
-    display: inline-block;
-    background-color: #eee;
-    margin-right: 5px;
+    padding: 10px;
+    margin-right: 4px; /* Adjust spacing between tabs */
+    background-color: #f0f0f0; /* Tab background color */
 }
 
-.tab-content {
+.experience-content {
     display: none;
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-top: 10px;
+    background-color: #fff; /* Content background color */
+    padding: 20px;
+    margin-top: 10px; /* Space between tabs and content */
 }
 
-.tab-content.active {
+.experience-content.active {
     display: block;
 }
 
-.tabs li.active {
-    background-color: #ddd;
+.experience-tabs li.active {
+    background-color: #0077cc;
+    color: white;
 }
 .project-tabs {
     list-style-type: none;
