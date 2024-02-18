@@ -1,6 +1,6 @@
 /* Adjusted main content style */
 .main-content {
-    padding-top: 150px; /* Adjust this value to the combined height of your header and nav */
+    padding-top: 250px; /* Adjust this value to the combined height of your header and nav */
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
