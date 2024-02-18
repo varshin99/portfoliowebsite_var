@@ -232,6 +232,9 @@ body {
     max-width: 60%; /* Increased maximum width of the image */
     height: auto;
 }
+.experience-text {
+    flex-basis: 70%; /* Adjust the width of the text container */
+}
 .tabs {
     list-style-type: none;
     padding: 0;
