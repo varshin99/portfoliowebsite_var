@@ -108,10 +108,10 @@ footer {
 #publications{
     background-color: #F7B787; /* Light gray background for these sections to create an alternating pattern */
 }
- #about{
+ #contact{
     background-color: #CCD3CA; /* Light gray background for these sections to create an alternating pattern */
 }
-#experience, #contact{
+#experience{
     background-color: #EEEEEE; /* Light gray background for these sections to create an alternating pattern */
 }
 
