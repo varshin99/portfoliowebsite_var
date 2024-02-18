@@ -115,3 +115,20 @@ section {
 #education, #projects {
     padding: 100px 0; /* Larger padding for these sections */
 }
+
+/* Ensure the h2 headings stand out */
+section h2 {
+    font-size: 2em; /* Increase the font size */
+    color: #0077cc; /* The color can be adjusted to match the site's theme */
+}
+
+/* Responsive padding and margin */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 5vh 0; /* Use viewport height for responsive vertical padding */
+        margin: 0 5%; /* Use percentage for responsive horizontal margin */
+    }
+}
+
+/* Add this to the bottom of your existing CSS */
+
