@@ -337,3 +337,21 @@ progress {
         width: 100%; /* Each section takes the full width on smaller screens */
     }
 }
+#contact .contact-container {
+    text-align: center; /* Center-align the text */
+    padding: 20px;
+}
+
+#contact .contact-details {
+    margin-bottom: 20px; /* Add some space below the contact details */
+}
+
+#contact .contact-links a {
+    margin: 0 10px; /* Add horizontal space between the links */
+    display: inline-block; /* Align images in line */
+}
+
+#contact .contact-links img {
+    width: 24px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
