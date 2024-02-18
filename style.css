@@ -107,7 +107,7 @@ section {
     background-color: #ffffff; /* White background for these sections */
 }
 
-#education, #projects, #publications {
+#education, #projects, #publications, #about, #experience, #contact{
     background-color: #eeeeee; /* Light gray background for these sections to create an alternating pattern */
 }
 
