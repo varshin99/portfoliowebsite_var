@@ -1,17 +1,12 @@
-const hamburger = document.getElementById('hamburger'); 
-const menu = document.querySelector('.menu'); 
+// Smooth Scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-hamburger.addEventListener('click', function () { 
-	const hamIcon = this.querySelector('.hamburger-icon'); 
-	const crossIcon = this.querySelector('.cross-icon'); 
-	if (hamIcon.style.display === "none") { 
-		hamIcon.style.display = "inline-block"
-		menu.style.display = "none"
-		crossIcon.style.display = "none"
-	} 
-	else { 
-		crossIcon.style.display = "inline-block"
-		hamIcon.style.display = "none"
-		menu.style.display = "block"
-	} 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
+
+// Additional interactivity can be added here
