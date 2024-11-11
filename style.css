@@ -22,6 +22,12 @@ nav ul li a:hover {
     background-color: #0077cc;
 }
 
+/* Section styling */
+.main-content h2 {
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+}
+
 /* General styling */
 body {
     font-family: 'Arial', sans-serif;
@@ -29,18 +35,10 @@ body {
     line-height: 1.6;
 }
 
-/* Hero styling */
 .hero {
-    background: #EEEEEE;
-    padding: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero-text {
-    flex: 1;
-    padding-right: 20px;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .hero-text h1 {
@@ -59,49 +57,23 @@ body {
 }
 
 .hero-image img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
-/* Section styling */
-section {
-    background-color: #EEEEEE;
-    padding: 100px 0;
-}
 
-section h2 {
+/* Section styling */
+.main-content h2 {
     border-bottom: 2px solid #0077cc;
     padding-bottom: 5px;
-    font-size: 2em;
-    color: #0077cc;
 }
 
-/* Tab and content styling for dynamic sections */
-.tabs li {
-    display: inline;
-    cursor: pointer;
-    padding: 10px;
-    margin-right: 4px;
-    background-color: #FDF0D1;
+.main-content p, .experience-item ul, .experience-item p, .experience-item h3 {
+    padding: 5px;
+    margin-left: 20px;
 }
 
-.tabs li.active {
-    background-color: #0077cc;
-    color: white;
-}
-
-.content {
-    display: none;
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 10px;
-}
-
-.content.active {
-    display: block;
-}
-
-/* Button styling */
+/* Buttons */
 .btn {
     display: inline-block;
     background: #0077cc;
@@ -116,7 +88,7 @@ section h2 {
     background: #005fa3;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
     background: #333;
     color: #fff;
@@ -124,50 +96,269 @@ footer {
     padding: 10px 0;
 }
 
-/* Contact section styling */
-.contact-container {
-    text-align: center;
+ #contact,#education,#projects {
+    background-color: #EEEEEE; /* Light gray background for these sections to create an alternating pattern */
+}
+ #about,#experience,#publications {
+    background-color: #B2A59B; /* Light gray background for these sections to create an alternating pattern */
+}
+
+/* Increase the size of specific sections, e.g., Education and Projects */
+#education, #projects, #publications, #about, #experience, #contact{
+    padding: 100px 0; /* Larger padding for these sections */
+}
+
+/* Ensure the h2 headings stand out */
+section h2 {
+    font-size: 2em; /* Increase the font size */
+    color: #0077cc; /* The color can be adjusted to match the site's theme */
+}
+
+/* Responsive padding and margin */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 5vh 0; /* Use viewport height for responsive vertical padding */
+        margin: 0 5%; /* Use percentage for responsive horizontal margin */
+    }
+}
+
+/* Add this to the bottom of your existing CSS */
+.hero {
+    background: #EEEEEE;
     padding: 20px;
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.contact-details {
     margin-bottom: 20px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out the child elements */
 }
 
-.social-links {
+.hero-text {
+    flex: 1; /* Allows text to grow and shrink as needed */
+    padding-right: 20px; /* Adds some space between text and image */
+}
+
+.hero-image {
+    flex: 1; /* Allows image to grow and shrink as needed */
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: flex-end; /* Aligns the image to the right */
 }
 
-.social-icon {
-    width: 24px;
+.hero-image img {
+    max-width: 50%; /* Adjust the size of the image */
+    height: auto;
+}
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Flex container styling */
+.hero {
+    background: #EEEEEE;
+    padding: 120px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out the child elements */
+}
+
+/* Text styling with increased size */
+.hero-text h1 {
+    color: #0077cc;
+    font-size: 3em; /* Increased font size for the name */
+}
+
+.hero-text h2 {
+    color: #333;
+    font-size: 2.5em; /* Increased font size for the 'Hi there, I'm' text */
+}
+
+.hero-text p {
+    color: #666;
+    font-size: 1.5em; /* Increased font size for the subtitle */
+}
+
+/* Image styling with increased size */
+.hero-image {
+    flex: 1; /* Allows image to grow and shrink as needed */
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the right */
+}
+#education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEEEEE; /* Light background for the education section */
+    padding: 50px; /* Spacing around content */
+}
+
+.education-content {
+    width: 100%; /* Ensure the container spans the full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-text {
+    flex-basis: 70%; /* Adjust the width of the text container */
+}
+
+.education-image {
+    flex-basis: 60%; /* Adjust the width of the image container */
+    text-align: right; /* Align the image to the right */
+}
+
+.education-image img {
+    max-width: 100%;
     height: auto;
 }
 
-/* Responsive adjustments */
+
+.hero-image img {
+    max-width: 60%; /* Increased maximum width of the image */
+    height: auto;
+}
+.experience-tabs {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-tabs li {
+    display: inline;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 4px; /* Adjust spacing between tabs */
+    background-color: #FDF0D1; /* Tab background color */
+}
+
+.experience-content {
+    display: none;
+    background-color: #fff; /* Content background color */
+    padding: 20px;
+    margin-top: 10px; /* Space between tabs and content */
+}
+
+.experience-content.active {
+    display: block;
+}
+
+.experience-tabs li.active {
+    background-color: #0077cc;
+    color: white;
+}
+.project-tabs {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-tabs li {
+    display: inline;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 4px; /* Adjust spacing between tabs */
+    background-color: #FDF0D1; /* Tab background color */
+}
+
+.project-content {
+    display: none;
+    background-color: #fff; /* Content background color */
+    padding: 20px;
+    margin-top: 10px; /* Space between tabs and content */
+}
+
+.project-content.active {
+    display: block;
+}
+
+.project-tabs li.active {
+    background-color: #0077cc;
+    color: white;
+}
+.publication-tabs {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publication-tabs li {
+    display: inline;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 4px;
+    background-color: #FDF0D1;
+}
+
+.publication-content {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.publication-content.active {
+    display: block;
+}
+
+.publication-tabs li.active {
+    background-color: #0077cc;
+    color: white;
+}
+/* Assuming .main-content wraps both .about-me and .skills */
+.main-content {
+    display: flex; /* This will align .about-me and .skills side by side */
+    justify-content: space-between; /* This adds space between the two sections */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    padding: 20px; /* Add padding as needed */
+    border-bottom: none; /* Removes the bottom border if it exists */
+}
+
+.about-me, .skills {
+    width: 48%; /* Adjust the width of each section to be less than half to fit side by side */
+    /* Alternatively, you could use flex: 1; for both if you want them to share the space equally */
+}
+
+/* Remove any border or line if it is applied directly to a heading or another element */
+.about-me h2, .skills h2 {
+    border-bottom: none; /* Removes the border from the headings */
+}
+
+/* Style the progress bars if needed */
+progress {
+    width: 100%; /* Set to the full width of the container */
+    margin-top: 10px; /* Add some space above the progress bar */
+}
+
+/* Responsive adjustments if needed */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        padding: 20px;
+    .main-content {
+        flex-direction: column; /* Stack them on top of each other on smaller screens */
     }
-
-    .hero-image img {
-        max-width: 100%;
-    }
-
-    .tabs li {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    .contact-container, .about-me, .skills {
-        width: 100%;
+    .about-me, .skills {
+        width: 100%; /* Each section takes the full width on smaller screens */
     }
 }
+#contact .contact-container {
+    text-align: center; /* Center-align the container */
+    padding: 20px;
+    margin: 0 auto; /* Auto margins center the block itself */
+    max-width: 600px; /* Maximum width of the container */
+}
+
+#contact .contact-details {
+    margin-bottom: 20px; /* Space between contact details and social links */
+}
+
+#contact .social-links {
+    display: flex;
+    justify-content: center; /* Center-align the flex items */
+    gap: 10px; /* Space between the flex items */
+}
+
+#contact .social-links a {
+    display: inline-block; /* Align items inline */
+}
+
+#contact .social-icon {
+    width: 24px; /* Smaller size for the icons */
+    height: auto; /* Maintain aspect ratio */
+} 
