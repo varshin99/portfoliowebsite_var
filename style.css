@@ -362,82 +362,42 @@ progress {
     width: 24px; /* Smaller size for the icons */
     height: auto; /* Maintain aspect ratio */
 } 
-/* Portfolio section styling */
-#Portfolio {
-    background-color: #f0f0f0; /* Light gray background for clear visibility */
-    padding: 50px 20px; /* Uniform padding for spacing */
-}
-
-#Portfolio h2 {
-    text-align: center; /* Center aligns the title for emphasis */
-    color: #0077cc; /* Styling the title color to match the theme */
-    margin-bottom: 20px; /* Space below the title */
-}
-
 .portfolio-tabs {
-    list-style-type: none; /* Remove bullet points */
-    overflow: hidden; /* Clear floats */
-    border: 1px solid #ccc; /* Light border around the tabs */
-    background-color: #f9f9f9; /* Light background for tabs */
+    list-style-type: none;
     padding: 0;
 }
 
 .portfolio-tabs li {
-    float: left; /* Align tabs in a row */
-    border-right: 1px solid #ccc; /* Separator between tabs */
-}
-
-.portfolio-tabs li:last-child {
-    border-right: none; /* Remove right border from the last tab */
-}
-
-.portfolio-tabs li a {
-    display: block; /* Block display to enable padding */
-    color: black; /* Text color */
-    text-align: center; /* Center text */
-    padding: 14px 16px; /* Padding inside tabs */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.portfolio-tabs li a:hover {
-    background-color: #ddd; /* Hover effect for tabs */
+    display: inline;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 4px; /* Adjust spacing between tabs */
+    background-color: #B2A59B; /* Opposite color to the project section */
 }
 
 .portfolio-content {
-    display: none; /* Hide content initially */
-    padding: 20px; /* Padding around content */
-    border: 1px solid #ccc; /* Border around content */
-    border-top: none; /* Remove top border */
-    -webkit-animation: fadeIn 0.5s; /* Animation for fade in */
-    animation: fadeIn 0.5s; /* Standard syntax for animation */
-}
-
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-/* Active class styles */
-.portfolio-tabs .active {
-    background-color: #0077cc; /* Active tab background color */
-    color: white; /* Active tab text color */
+    display: none;
+    background-color: #fff; /* Content background color */
+    padding: 20px;
+    margin-top: 10px; /* Space between tabs and content */
 }
 
 .portfolio-content.active {
-    display: block; /* Show active content */
+    display: block;
 }
 
-/* Ensure responsiveness of the portfolio section */
-@media screen and (max-width: 768px) {
+.portfolio-tabs li.active {
+    background-color: #0077cc;
+    color: white;
+}
+
+/* Ensuring responsive behavior for portfolio section similar to other sections */
+@media (max-width: 768px) {
+    .portfolio-content {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
     .portfolio-tabs li {
-        float: none; /* Stack tabs vertically on small screens */
-        width: 100%; /* Full width tabs */
+        padding: 5px; /* Smaller padding for tabs on mobile */
     }
 }
-
