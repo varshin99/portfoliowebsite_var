@@ -361,39 +361,4 @@ progress {
 #contact .social-icon {
     width: 24px; /* Smaller size for the icons */
     height: auto; /* Maintain aspect ratio */
-}
-/* Basic animation classes */
-.fade-in-section {
-    opacity: 0;
-    transition: opacity 1s ease-out;
-}
-
-.animate {
-    opacity: 1;
-}
-
-.pop {
-    animation: pop 0.6s ease forwards;
-}
-
-@keyframes pop {
-    0% {
-        transform: scale(0.98);
-        opacity: 0.6;
-    }
-    50% {
-        transform: scale(1.02);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-/* Enhanced visual feedback for active tabs */
-.tab.active {
-    transform: translateY(-2px);
-    background-color: #005fa3; /* Darker shade when active */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
-}
-
+} 
