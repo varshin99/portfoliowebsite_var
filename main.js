@@ -64,3 +64,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const portfolioTabs = document.querySelectorAll("#Portfolio .portfolio-tab");
+    const portfolioContents = document.querySelectorAll("#Portfolio .portfolio-content");
+
+    portfolioTabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            const target = document.querySelector(tab.dataset.tabTarget);
+            portfolioContents.forEach(content => {
+                content.classList.remove("active");
+            });
+            portfolioTabs.forEach(t => {
+                t.classList.remove("active");
+            });
+            tab.classList.add("active");
+            target.classList.add("active");
+        });
+    });
+});
+
